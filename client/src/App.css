@@ -1,0 +1,279 @@
+body{
+  background-color: red;
+}
+.imgcontainer .inner-foto{
+    position: relative;
+    width:260px;
+    height: 0;
+    cursor: pointer;
+    padding-bottom: 100%;
+    border-radius: 30rem;
+    background: grey;
+    overflow: hidden;
+    background-position: 50% 50%!important;
+    background-size: cover!important;
+    -webkit-background-size: cover!important;
+}
+.imgcontainer .firstLi{
+  width:25%;
+  display: block;
+  float: left;
+  position: relative;
+}
+.imgcontainer .inner-foto .inner-icon-text{
+  margin:110px 29%;
+  text-transform: uppercase;
+ 
+}
+.imgcontainer .inner-foto label {
+  cursor: pointer;
+  font-size:12px ;
+  /* Style as you please, it will become the visible UI component. */
+}
+
+#upload-photo {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+.fa-camera{
+  margin-left:32%;
+  margin-bottom:6px;
+  color:#eee;
+}
+.namecontainer .lastLi{
+  display: block;
+  float: right;
+  position: relative;
+}
+::placeholder { 
+  color: red;
+}
+.namecontainer{
+  margin-top:130px;
+  margin-left:-70px;
+}
+.namecontainer .c-name{
+    width: 800px;
+    height: 85px;
+    padding: 5px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+   
+}
+.namecontainer .expert{
+  width: 800px;
+  height: 45px;
+  padding: 5px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+ 
+}
+
+.c-name[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+.expert[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+
+/*-------- Here is the CSS   PERSONAL-INFO -------- */
+.list-personal .single-info .personal-info{
+  width: 800px;
+  height: 45px;
+  font-size: 1.2rem;
+  font-weight:300;
+  margin: 0;
+  outline: none;
+ 
+}
+.personal-info[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+.list-personal li{
+  list-style: none;
+  font-size:22px;
+  margin-left:-40px;
+  margin-top:-10px;
+
+}
+/*-------- Here is the CSS    CONTACT-INFO -------- */
+.list-contact li{
+  list-style: none;
+  font-size:22px;
+  margin-left:-40px;
+  margin-top:-10px;
+}
+.list-contact .single-contact .contact-info{
+  width: 800px;
+  height: 45px;
+  font-size: 1.2rem;
+  font-weight:300;
+  margin: 0;
+  outline: none;
+  margin:5px;
+ 
+}
+.contact-info[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+.list-contact li{
+  margin-top: 12px;
+}
+.fa{
+  color: red;
+}
+/* ---------------------------------------------------
+    Resume PAGE STYLE    
+----------------------------------------------------- */
+
+.resume-wrapper{
+  border-left: 3px solid #7F8C8D;
+  margin-top: 70px;
+}
+.resume{
+  margin-top:20px;
+  margin-left:-45px;
+}
+.resume-area .sectiontitle{
+  position: relative;
+  z-index: 1;
+}
+.resume-area .smalltitle{
+  display: flex;
+  align-items: center;
+}
+.resume-summary{
+  align-self: flex-start;
+  flex: 0 0 220px;
+  max-width: 220px;
+  padding-left: 20px;
+  position: relative;
+  margin-left:50px;
+}
+.resume-summary:before{
+  content: "";
+  position: absolute;
+  left:-14px;
+  top: 0px;
+  height: 15px;
+  width: 15px;
+  border-radius: 100px;
+  background: red;
+  border: 3px solid red;
+
+}
+.resume-details{
+  position: relative;
+  margin-left:60px;
+  margin-top:-32px;
+  
+}
+.resume-details .position{
+  outline: none;
+  
+}
+.resume-details .mi-resume-company{
+  outline: none;
+  font-weight: 600px;
+}
+.resume-wrapper .resume p{
+  margin-left: 80px;
+  margin-top: 0px;
+}
+/* .resume-details:before{
+  content: "";
+  position: absolute;
+  left:-40px;
+  top:14px;
+  height: 1px;
+  width: 30px;
+  background: #2e344e;
+} */
+.position[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+.mi-resume-company[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+.describe[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+.mi-resume-year[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+/* ---------------------------------------------------
+    Resume PAGE STYLE    
+----------------------------------------------------- */
+.degree[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+.school[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+
+.menu .menu-cover{
+  border-radius: 1.5rem;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.3);
+    background: #252525;
+    display: inline-block;
+    height:100px;
+}
+.menu .menu-cover .menu-item{
+    padding: 1.5rem 1.25rem;
+    float: left;
+    border-left: 1px solid #8080803b;
+    position: relative;
+    text-align: center;
+}
+.menu .menu-cover .menu-item .color-pick .avatar{
+  vertical-align: middle;
+  width:45px;
+  height:45px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 5px;
+  display:inline-block
+}
+.menu .menu-cover .menu-item .fontSizeN .fontNav{
+  display: inline;
+  padding-left: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+.menu .menu-cover .menu-item .fontSizeN{
+  margin-top:-20px;
+}
+.menu .menu-cover .menu-item .picon{
+  display: inline;
+  padding-left: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+.menu .menu-cover .menu-item .page-icon{
+  margin-top: 5px;
+}
+.menu .menu-cover .download{
+    border-radius: 0rem 1.5rem   1.5rem 0rem;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.3);
+    background: #252525;
+    display: inline-block;
+    height:100px;
+
+}
