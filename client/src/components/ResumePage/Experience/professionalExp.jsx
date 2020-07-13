@@ -1,15 +1,22 @@
 import React, { Component } from 'react'
 import SingleExperience from './SingleExperience'
+import Tooltip from '@material-ui/core/Tooltip';
+import { makeStyles } from '@material-ui/core/styles';
+import AddIcon from '@material-ui/icons/Add';
+import Fab from '@material-ui/core/Fab';
+import DeleteIcon from '@material-ui/icons/Delete';
+import IconButton from '@material-ui/core/IconButton';
 
 class professionalExp extends Component {
     state = {
         users: [],
-        count:0
+        count:0,
+        visible:false
       }
     
       addUser = () => {
         this.setState({
-          users: [...this.state.users, <SingleExperience />],
+          users: [...this.state.users, <SingleExperience font={this.props.font} />],
           count:this.state.count+1
          
         })
@@ -21,24 +28,42 @@ class professionalExp extends Component {
                 users: filteredItems
               })
       }
+      onHover=()=>{
+        this.setState((prevState)=>{
+            return {visible: !prevState.visible};    
+        });
+     }
      
     render() {
-       
+      
+     
        const {users}=this.state
         return (
-            <div>
-            <h4 className="mb-2" style={{fontWeight:600}}> PROFESSIONAL EXPERIENCE</h4>
-            <button onClick={this.addUser}>Add User</button>
-            <button onClick={this.removeUser}>remove User</button>   
-            
-            <div className="resume-wrapper">
-                {users.map((user,index)=>{
-                    return(
-                        user
-                    )
-                })}
-                <SingleExperience />
-            </div>
+            <div className="mt-5">
+              <h4 className="mb-2" style={{fontWeight:600 ,fontFamily:this.props.font}}> PROFESSIONAL EXPERIENCE</h4>
+              <div className="resume-wrapper" onMouseOver={this.onHover}  >
+                  {users.map((user,index)=>{
+                      return(
+                          user
+                      )
+                  })}
+                  <SingleExperience font={this.props.font} />
+              </div>
+            {this.state.visible ?
+                    <Tooltip title="Add" aria-label="add" className="float-right" style={{marginTop:-150,marginRight:57}}>
+                    <Fab color="#000" onClick={this.addUser} >
+                        <AddIcon />
+                    </Fab>
+                    </Tooltip> 
+                    :null}
+                   
+            {this.state.visible ?
+                    <Tooltip title="Remove" aria-label="remove" className="float-right" style={{marginTop:-150,marginLeft:100}}>
+                    <Fab color={this.props.color} onClick={this.removeUser} >
+                        <DeleteIcon  />
+                    </Fab>
+                    </Tooltip> 
+                    :null}    
             </div>   
             
         )

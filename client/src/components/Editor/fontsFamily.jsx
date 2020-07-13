@@ -1,11 +1,19 @@
 import React, { Component } from 'react'
 
 class fontsFamily extends Component {
+    state={
+        textFont:null
+    }
+
+    handleChange=(e)=>{
+        var lang =e.target.value;
+        this.props.handlefont(lang)
+    }
     render() {
         return (
             <div>
                 <div className="mt-2 ml-2 ">
-                <select id="input-font"   onChange={this.handleChange}>
+                <select id="input-font" value={this.state.selected}  onChange={this.handleChange}>
                     <option value="Arial">Arial</option>
                     <option value="Helvetica">Helvetica</option>
                     <option value="Times New Roman">Times New Roman</option>

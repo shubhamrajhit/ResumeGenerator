@@ -1,6 +1,4 @@
-body{
-  background-color: red;
-}
+
 .imgcontainer .inner-foto{
     position: relative;
     width:260px;
@@ -143,6 +141,9 @@ body{
   margin-top:20px;
   margin-left:-45px;
 }
+/* .resume:hover {
+  outline: #333 dotted 4px;
+} */
 .resume-area .sectiontitle{
   position: relative;
   z-index: 1;

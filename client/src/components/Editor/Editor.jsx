@@ -16,6 +16,9 @@ class Editor extends Component {
     handleBirth=(e)=>{
         this.props.handleBirth(e)
     }
+    handlefont=(e)=>{
+        this.props.handlefont(e)
+    }
     render() {
         return (
             <div className="menu mt-5" style={{marginLeft:170}}>
@@ -24,7 +27,7 @@ class Editor extends Component {
                         <Pages />
                     </div>
                     <div className="menu-item">
-                        <FontsFamily />
+                        <FontsFamily handlefont={this.handlefont} />
                     </div>
                     <div className="menu-item">
                         <FontsSize />

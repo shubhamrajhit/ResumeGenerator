@@ -1,15 +1,23 @@
 import React, { Component } from 'react'
 import SingleInfo from './singleInfo'
+import Tooltip from '@material-ui/core/Tooltip';
+import { makeStyles } from '@material-ui/core/styles';
+import AddIcon from '@material-ui/icons/Add';
+import Fab from '@material-ui/core/Fab';
+import DeleteIcon from '@material-ui/icons/Delete';
+import IconButton from '@material-ui/core/IconButton';
+
 
 class Education extends Component {
     state = {
         users: [],
-        count:0
+        count:0,
+        visible:false
       }
     
       addUser = () => {
         this.setState({
-          users: [...this.state.users, <SingleInfo />],
+          users: [...this.state.users, <SingleInfo font={this.props.font}  />],
           count:this.state.count+1
          
         })
@@ -21,22 +29,40 @@ class Education extends Component {
                 users: filteredItems
               })
       }
+      onHover=()=>{
+        this.setState((prevState)=>{
+            return {visible: !prevState.visible};    
+        });
+     }
     render() {
         const {users}=this.state
         return (
             <div className="mt-5">
-               <h4 className="mb-1" style={{fontWeight:600}}>EDUCATION</h4>
-               <button onClick={this.addUser}>Add User</button>
-            <button onClick={this.removeUser}>remove User</button>   
-            
-            <div className="resume-wrapper">
+               <h4 className="mb-1" style={{fontWeight:600,fontFamily:this.props.font}}>EDUCATION</h4>
+            <div className="resume-wrapper" onMouseOver={this.onHover} >
+               
+                <SingleInfo addUser={this.addUser} font={this.props.font} />
                 {users.map((user,index)=>{
                     return(
                         user
                     )
                 })}
-                <SingleInfo />
-            </div>  
+            </div>
+                   
+            {this.state.visible ?
+                    <Tooltip title="Add" aria-label="add" className="float-right" style={{marginTop:-50}}>
+                    <Fab color="primary" onClick={this.removeUser} >
+                        <DeleteIcon  />
+                    </Fab>
+                    </Tooltip> 
+                    :null}   
+            {this.state.visible ?
+                    <Tooltip title="Add" aria-label="add" className="float-right" style={{marginTop:-50,marginLeft:200}}>
+                    <Fab color="primary" onClick={this.addUser} >
+                        <AddIcon />
+                    </Fab>
+                    </Tooltip> 
+                    :null}     
             </div>
         )
     }

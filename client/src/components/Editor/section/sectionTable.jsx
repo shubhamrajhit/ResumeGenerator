@@ -25,15 +25,15 @@ class sectionTable extends Component {
                                 <label style={{marginLeft:10,fontSize:10}} >BIRTH DATE</label>
                             </div>
                             <div className="birth">
-                                <input type="checkbox" onChange={ this.handleItalic }></input>
+                                <input type="checkbox" onChange={ this.handleNation }></input>
                                 <label style={{marginLeft:10,fontSize:10}} >NATIONALITY</label>
                             </div>
                             <div className="birth">
-                                <input type="checkbox" onChange={ this.handleItalic }></input>
+                                <input type="checkbox" onChange={ this.handleAdress }></input>
                                 <label style={{marginLeft:10,fontSize:10}} >ADDRESS</label>
                             </div>
                             <div className="birth">
-                                <input type="checkbox" onChange={ this.handleItalic }></input>
+                                <input type="checkbox" onChange={ this.handleStatus }></input>
                                 <label style={{marginLeft:10,fontSize:10}} >STATUS</label>
                             </div>
                         </div>
@@ -42,19 +42,19 @@ class sectionTable extends Component {
                         <div className="personal-sec">
                             <h5 style={{fontSize:11}}><b>CONTACT DETAILS</b></h5>
                             <div className="birth">
-                                <input type="checkbox" onChange={ this.handleItalic }></input>
+                                <input type="checkbox" onChange={ this.handleEmail }></input>
                                 <label style={{marginLeft:10,fontSize:10}} >EMAIL</label>
                             </div>
                             <div className="birth">
-                                <input type="checkbox" onChange={ this.handleItalic }></input>
+                                <input type="checkbox" onChange={ this.handlePhone }></input>
                                 <label style={{marginLeft:10,fontSize:10}} >PHONE NUMBER</label>
                             </div>
                             <div className="birth">
-                                <input type="checkbox" onChange={ this.handleItalic }></input>
+                                <input type="checkbox" onChange={ this.handleSkype }></input>
                                 <label style={{marginLeft:10,fontSize:10}} >SKYPE</label>
                             </div>
                             <div className="birth">
-                                <input type="checkbox" onChange={ this.handleItalic }></input>
+                                <input type="checkbox" onChange={ this.handleWeb }></input>
                                 <label style={{marginLeft:10,fontSize:10}} >WEBSITE</label>
                             </div>
                         </div>
@@ -63,19 +63,19 @@ class sectionTable extends Component {
                         <div className="personal-sec">
                             <h5 style={{fontSize:11}}><b>PROFILE  DETAILS</b></h5>
                             <div className="birth">
-                                <input type="checkbox" onChange={ this.handleItalic }></input>
+                                <input type="checkbox" onChange={ this.handleLinkdin }></input>
                                 <label style={{marginLeft:10,fontSize:10}} >LINKDIN</label>
                             </div>
                             <div className="birth">
-                                <input type="checkbox" onChange={ this.handleItalic }></input>
+                                <input type="checkbox" onChange={ this.handleGithub }></input>
                                 <label style={{marginLeft:10,fontSize:10}} >GITHUB</label>
                             </div>
                             <div className="birth">
-                                <input type="checkbox" onChange={ this.handleItalic }></input>
+                                <input type="checkbox" onChange={ this.handleMedium }></input>
                                 <label style={{marginLeft:10,fontSize:10}} >MEDIUM</label>
                             </div>
                             <div className="birth">
-                                <input type="checkbox" onChange={ this.handleItalic }></input>
+                                <input type="checkbox" onChange={ this.handleQuara }></input>
                                 <label style={{marginLeft:10,fontSize:10}} >QUARA</label>
                             </div>
                         </div>

@@ -13,34 +13,53 @@ class ResumePage extends Component {
     render() {
         console.log(this.props.birth)
         return (
-            <div className="container" style={{backgroundColor:'#fff',marginTop:10,height:2400,width:1400}}>
+            <div className="container" style={{backgroundColor:'#fff',marginTop:10,height:2100,width:1400}}>
                 <div className="row">
                     <div className="col-md-4 ml-5 mt-5" >
                         <ProfileImg />
                     </div>
                     <div className="col-md-6 ml-5 mt-5">
-                        <ProfileName color={this.props.color} />  
+                        <ProfileName
+                         color={this.props.color} 
+                         font={this.props.font}
+                         />  
                     </div>
                 </div>
 
                 <div className="row">
                 <div className="col-md-4 ml-5 mt-5">
                     <div className="personal-detail">
-                        <PersonalDetail color={this.props.color} />    
+                        <PersonalDetail 
+                        color={this.props.color}
+                        font={this.props.font}
+                         />    
                     </div>
                     <div className="contact">
-                         <Contact color={this.props.color} birth={this.props.birth} />
+                         <Contact
+                          color={this.props.color} 
+                          birth={this.props.birth}
+                          font={this.props.font}
+                           />
                     </div>
                     <div className="profile">
-                         <Profileurl color={this.props.color} />
+                         <Profileurl
+                          color={this.props.color}
+                          font={this.props.font}
+                           />
                     </div>
                 </div>
                     <div className="col-md-6 mt-5 ml-2 " style={{marginLeft:-50}} >
                         <div className="professionalExp">
-                            <ProfessionalExp color={this.props.color} />
+                            <ProfessionalExp
+                             color={this.props.color}
+                             font={this.props.font}
+                              />
                         </div>
                         <div className="education ml-2">
-                            <Education color={this.props.color} />
+                            <Education 
+                            color={this.props.color}
+                            font={this.props.font}
+                             />
                         </div>
                     </div>
                 

@@ -5,7 +5,8 @@ import ResumePage from '../ResumePage/ResumePage'
 class mainDashBoardPage extends Component {
     state={
         color:null,
-        birth:null
+        birth:null,
+        font:null
     }
     handleColor=(color)=>{
         this.setState({
@@ -18,6 +19,12 @@ class mainDashBoardPage extends Component {
             birth:e
         })
     }
+    handlefont=(e)=>{
+        this.setState({
+            ...this.state,
+            font:e
+        })
+    }
     render() {
         console.log(this.state.birth)
         return (
@@ -25,10 +32,12 @@ class mainDashBoardPage extends Component {
                 <Editor
                  handleColor={this.handleColor}
                  handleBirth={this.handleBirth} 
+                 handlefont={this.handlefont}
                   />
                 <ResumePage
                 color={this.state.color}
                 birth={this.state.birth}
+                font={this.state.font}
                  />
                 
             </div>
