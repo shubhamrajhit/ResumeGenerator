@@ -5,7 +5,7 @@ import bgimg from "../../static/img/shu.jpeg";
 class profileImg extends Component {
     render() {
         return (
-            <div className="imgcontainer ml-3">
+            <div className="imgcontainer ml-3 mt-2">
             <div className="firstLi">
                  <label>
                      <div className="inner-foto mt-5 "
@@ -21,7 +21,9 @@ class profileImg extends Component {
                          </div>
                      </div>
                  </label>
+                
              </div>
+             
          </div>
         )
     }

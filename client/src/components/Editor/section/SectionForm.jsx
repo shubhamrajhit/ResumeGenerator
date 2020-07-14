@@ -17,6 +17,39 @@ const SectionForm = (props) => {
   const handleBirth=(e)=>{
     props.handleBirth(e)
   }  
+  const handleNation=(e)=>{
+    props.handleNation(e)
+  }  
+  const handleAddress=(e)=>{
+    props.handleAddress(e)
+  }  
+  const handleStatus=(e)=>{
+    props.handleStatus(e)
+  }  
+  const handleEmail=(e)=>{
+    props.handleEmail(e)
+  }  
+  const handlePhone=(e)=>{
+    props.handlePhone(e)
+  }  
+  const handleSkype=(e)=>{
+    props.handleSkype(e)
+  }  
+  const handleWeb=(e)=>{
+    props.handleWeb(e)
+  }  
+  const handleLinkdin=(e)=>{
+    props.handleLinkdin(e)
+  }  
+  const handleGithub=(e)=>{
+    props.handleGithub(e)
+  }  
+  const handleMedium=(e)=>{
+    props.handleMedium(e)
+  }  
+  const handleQuara=(e)=>{
+    props.handleQuara(e)
+  }  
   
 
   return (
@@ -26,7 +59,20 @@ const SectionForm = (props) => {
       <Modal isOpen={modal} id="canvas_pack" toggle={toggle} className={className} >
      
         <ModalBody>
-            <SectionTable handleBirth={handleBirth} />
+            <SectionTable
+             handleBirth={handleBirth}
+             handleNation={handleNation}
+             handleAddress={handleAddress}
+             handleStatus={handleStatus}
+             handleEmail={handleEmail}
+             handlePhone={handlePhone}
+             handleSkype={handleSkype}
+             handleWeb={handleWeb}
+             handleLinkdin={handleLinkdin}
+             handleGithub={handleGithub}
+             handleMedium={handleMedium}
+             handleQuara={handleQuara}
+              />
         </ModalBody>
         <ModalFooter>
          

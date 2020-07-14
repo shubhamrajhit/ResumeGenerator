@@ -6,6 +6,7 @@ import Contact from './contact'
 import ProfessionalExp from './Experience/professionalExp'
 import Education from './education/Education'
 import Profileurl from './profileurl'
+import ProfileStatus from './profileStatus'
 class ResumePage extends Component {
     state={
 
@@ -13,7 +14,7 @@ class ResumePage extends Component {
     render() {
         console.log(this.props.birth)
         return (
-            <div className="container" style={{backgroundColor:'#fff',marginTop:10,height:2100,width:1400}}>
+            <div className="container" id="capture" style={{backgroundColor:'#fff',marginTop:100,height:2100,width:1400}}>
                 <div className="row">
                     <div className="col-md-4 ml-5 mt-5" >
                         <ProfileImg />
@@ -28,23 +29,42 @@ class ResumePage extends Component {
 
                 <div className="row">
                 <div className="col-md-4 ml-5 mt-5">
+                    <div className="profile-status">
+                        <ProfileStatus
+                            color={this.props.color}
+                            font={this.props.font}
+                             status={this.props.status}
+                        />
+                    </div>
+                
                     <div className="personal-detail">
                         <PersonalDetail 
                         color={this.props.color}
                         font={this.props.font}
+                        birth={this.props.birth}
+                        nation={this.props.nation}
+                        address={this.props.address}
+                       
                          />    
                     </div>
                     <div className="contact">
                          <Contact
                           color={this.props.color} 
-                          birth={this.props.birth}
                           font={this.props.font}
+                          email={this.props.email}
+                          phone={this.props.phone}
+                          web={this.props.web}
+                          skype={this.props.skype}
                            />
                     </div>
                     <div className="profile">
                          <Profileurl
                           color={this.props.color}
                           font={this.props.font}
+                          linkdin={this.props.linkdin}
+                          github={this.props.github}
+                          medium={this.props.medium}
+                          quara={this.props.quara}
                            />
                     </div>
                 </div>

@@ -4,14 +4,14 @@ class personalDetail extends Component {
     render() {
         return (
             <div className="mb-5 ml-3">
-                <h4 className="mb-5" style={{
+                <h4 className="mb-4" style={{
                     fontWeight:600,
                     fontFamily:this.props.font
                     }}>  PERSONAL DETAILS</h4>
                     <div className="list-personal">
                         <ul>
                             <li>
-                                <div className="single-info">
+                                <div className="single-info" style={{display:this.props.birth ?'block':'none'}}>
                                     <p 
                                     style={{color:this.props.color
                                     ,fontWeight:700,
@@ -29,7 +29,7 @@ class personalDetail extends Component {
                                 </div>
                             </li>
                             <li>
-                                <div className="single-info">
+                                <div className="single-info" style={{display:this.props.nation ?'block':'none'}}>
                                     <p style={{color:this.props.color
                                     ,fontWeight:700,
                                     marginBottom:-3,
@@ -46,7 +46,7 @@ class personalDetail extends Component {
                                 </div>
                             </li>
                             <li>
-                                <div className="single-info">
+                                <div className="single-info" style={{display:this.props.address ?'block':'none'}}>
                                     <p style={{color:this.props.color
                                     ,fontWeight:700,
                                     marginBottom:-3,

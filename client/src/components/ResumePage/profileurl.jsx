@@ -8,7 +8,7 @@ export default class profileurl extends Component {
                     <div className="list-contact">
                         <ul>
                             <li>
-                                <div className="single-contact" style={{display:'block'}}>
+                                <div className="single-contact" style={{display:this.props.github ?'block':'none'}}>
                                 <i class="fa fa-github" aria-hidden="true" style={{marginRight:10,color:this.props.color}} ></i>
                                     <u><span
                                     className="contact-info" 
@@ -24,7 +24,7 @@ export default class profileurl extends Component {
                                 </div>    
                             </li>
                             <li>
-                                <div className="single-contact" style={{display:'block'}}>
+                                <div className="single-contact" style={{display:this.props.linkdin ?'block':'none'}}>
                                 <i class="fa fa-linkedin" aria-hidden="true" style={{marginRight:10,color:this.props.color}} ></i>
                                     <u><span
                                     className="contact-info" 
@@ -40,7 +40,7 @@ export default class profileurl extends Component {
                                 </div>    
                             </li>
                             <li>
-                                <div className="single-contact" style={{display:'block'}}>
+                                <div className="single-contact" style={{display:this.props.quara ?'block':'none'}}>
                                 <i class="fa fa-quora" aria-hidden="true" style={{marginRight:10,color:this.props.color}} ></i>
                                     <u><span
                                     className="contact-info" 
@@ -56,7 +56,7 @@ export default class profileurl extends Component {
                                 </div>    
                             </li>
                             <li>
-                                <div className="single-contact" style={{display:'block'}}>
+                                <div className="single-contact" style={{display:this.props.medium ?'block':'none'}}>
                                 <i class="fa fa-medium" aria-hidden="true" style={{marginRight:10,color:this.props.color}}  ></i>
                                     <u><span
                                     className="contact-info" 
