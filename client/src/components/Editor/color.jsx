@@ -4,7 +4,7 @@ import { SketchPicker } from 'react-color';
 class color extends Component {
     state={
         isdisplay:false,
-        background:'red'
+        background:'green'
     }
     handleChangeComplete = (color) => {
         this.setState({ background: color.hex });

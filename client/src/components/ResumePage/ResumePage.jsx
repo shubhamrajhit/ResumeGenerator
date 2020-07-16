@@ -7,6 +7,7 @@ import ProfessionalExp from './Experience/professionalExp'
 import Education from './education/Education'
 import Profileurl from './profileurl'
 import ProfileStatus from './profileStatus'
+import Skill from './skill/skill'
 class ResumePage extends Component {
     state={
 
@@ -14,7 +15,7 @@ class ResumePage extends Component {
     render() {
         console.log(this.props.birth)
         return (
-            <div className="container" id="capture" style={{backgroundColor:'#fff',marginTop:100,height:2100,width:1400}}>
+            <div className="container mb-4" id="capture" style={{backgroundColor:'#fff',marginTop:100,height:2100,width:1400}}>
                 <div className="row">
                     <div className="col-md-4 ml-5 mt-5" >
                         <ProfileImg />
@@ -81,6 +82,30 @@ class ResumePage extends Component {
                             font={this.props.font}
                              />
                         </div>
+                        <h4 className=" mt-5" style={{fontWeight:600 ,fontFamily:this.props.font}}> SKILL</h4>
+                            <div className="row">
+                                <div className="col-md-7">
+                                    <div className="skill">
+                                        <Skill 
+                                        color={this.props.color}
+                                        font={this.props.font}
+                                    />
+                                    </div>
+                                
+                                </div>
+                                <div className="col-md-5" >
+                                    <div className="skill">
+                                        <Skill 
+                                        color={this.props.color}
+                                        font={this.props.font}
+                                    />
+                                    </div>
+                                
+                                </div>
+                        </div>
+                       
+                        
+                        
                     </div>
                 
                 </div>

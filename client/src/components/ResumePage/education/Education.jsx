@@ -51,14 +51,14 @@ class Education extends Component {
                    
             {this.state.visible ?
                     <Tooltip title="Add" aria-label="add" className="float-right" style={{marginTop:-50}}>
-                    <Fab color="primary" onClick={this.removeUser} >
+                    <Fab color="primary" onClick={this.removeUser} style={{width:'35px',height:'25px'}} >
                         <DeleteIcon  />
                     </Fab>
                     </Tooltip> 
                     :null}   
             {this.state.visible ?
                     <Tooltip title="Add" aria-label="add" className="float-right" style={{marginTop:-50,marginLeft:200}}>
-                    <Fab color="primary" onClick={this.addUser} >
+                    <Fab color="primary" onClick={this.addUser} style={{width:'35px',height:'25px'}} >
                         <AddIcon />
                     </Fab>
                     </Tooltip> 

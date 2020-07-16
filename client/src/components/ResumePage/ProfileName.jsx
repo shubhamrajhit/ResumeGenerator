@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+
+
 class ProfileName extends Component {
     render() {
         return (
@@ -18,6 +20,8 @@ class ProfileName extends Component {
                     </div>
 
                 </div>
+               
+               
             </div>
         )
     }

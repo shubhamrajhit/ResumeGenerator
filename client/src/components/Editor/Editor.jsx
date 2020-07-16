@@ -63,8 +63,9 @@ class Editor extends Component {
         return (
             <div className="menu mt-5 " style={{marginLeft:300}}>
                 <div className="menu-cover fixed-top " style={{marginTop:0,width:'80%',marginLeft:150}}>
+                    
                     <div className="menu-item">
-                        <Pages />
+                        <Color handleColor={this.handleColor} />
                     </div>
                     <div className="menu-item">
                         <FontsFamily handlefont={this.handlefont} />
@@ -89,8 +90,9 @@ class Editor extends Component {
                         />    
                     </div>
                     <div className="menu-item">
-                    <Color handleColor={this.handleColor} />
+                        <Pages />
                     </div>
+                   
                     <div className="menu-item ml-5 " style={{marginTop:-40}}>
                     <PreviewModal
                      handleshareurl={this.handleshareurl}

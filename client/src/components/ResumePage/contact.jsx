@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+
 class contact extends Component {
     render() {
         console.log(this.props.birth)
@@ -72,13 +73,13 @@ class contact extends Component {
                                     </u>
                                 </div>    
                             </li>
-                           
+                         
                                 
                                 
                                 
                         </ul>
                     </div>
-                
+               
             </div>
         )
     }

@@ -24,6 +24,7 @@ class mainDashBoardPage extends Component {
         this.setState({
             color:color
         })
+        this.props.handleMainColor(color)
     }
     handlefont=(e)=>{
         this.setState({

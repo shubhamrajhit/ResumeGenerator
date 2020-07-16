@@ -51,7 +51,7 @@ class professionalExp extends Component {
               </div>
             {this.state.visible ?
                     <Tooltip title="Add" aria-label="add" className="float-right" style={{marginTop:-150,marginRight:57}}>
-                    <Fab color="#000" onClick={this.addUser} >
+                    <Fab color="#000" onClick={this.addUser} style={{width:'35px',height:'25px'}}>
                         <AddIcon />
                     </Fab>
                     </Tooltip> 
@@ -59,7 +59,7 @@ class professionalExp extends Component {
                    
             {this.state.visible ?
                     <Tooltip title="Remove" aria-label="remove" className="float-right" style={{marginTop:-150,marginLeft:100}}>
-                    <Fab color={this.props.color} onClick={this.removeUser} >
+                    <Fab color={this.props.color} onClick={this.removeUser} style={{width:'35px',height:'25px'}} >
                         <DeleteIcon  />
                     </Fab>
                     </Tooltip> 
