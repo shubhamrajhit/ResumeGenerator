@@ -32,7 +32,7 @@ class sectionTable extends Component {
         this.setState((prevState)=>{
             return {address: !prevState.address};    
         });
-        this.props.handleAdress(this.state.address)
+        this.props.handleAddress(this.state.address)
     }
     handleStatus=()=>{
         this.setState((prevState)=>{
@@ -102,7 +102,7 @@ class sectionTable extends Component {
                             </div>
                             <h5 style={{fontSize:11}}><b>PERSONAL DETAILS</b></h5>
                             <div className="birth">
-                                <input type="checkbox" checked={!this.state.birth} onChange={ this.handleBirth }   ></input>
+                                <input type="checkbox" onChange={ this.handleBirth }   ></input>
                                 <label style={{marginLeft:10,fontSize:10}} >BIRTH DATE</label>
                             </div>
                             <div className="birth">

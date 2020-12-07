@@ -10,7 +10,10 @@ class singleSkill extends Component {
             return {percent: prevState.percent>99 ? prevState.percent-100:prevState.percent+25};    
         });
     }
+
     render() {
+
+
         return (
            
                 <div className="skill " style={{marginTop:60}}>
@@ -26,8 +29,9 @@ class singleSkill extends Component {
                                 fontFamily:this.props.font,
                                 width:280
                                 }} >
-
-                    </h4>
+                        </h4>
+                       
+                        
                         
                     </div>
                                    

@@ -1,5 +1,5 @@
 body{
-  background-color: green;
+  background-color:#000;
 }
 #root{
   margin-top:-100px;
@@ -143,8 +143,11 @@ body{
   margin-top: 70px;
 }
 .resume{
-  margin-top:20px;
+  margin-top:70px;
   margin-left:-45px;
+}
+.resume .describe{
+  outline: none;
 }
 /* .resume:hover {
   outline: #333 dotted 4px;
@@ -173,7 +176,7 @@ body{
   height: 15px;
   width: 15px;
   border-radius: 100px;
-  background: red;
+  background-color: red;
   border: 3px solid red;
 
 }
@@ -187,14 +190,15 @@ body{
   outline: none;
   
 }
-.resume-details .mi-resume-company{
+.resume-details .mi-resume-company,.resume-details .mi-resume-year{
   outline: none;
-  font-weight: 600px;
+  font-weight:700px;
 }
 .resume-wrapper .resume p{
-  margin-left: 80px;
+  margin-left: 65px;
   margin-top: 0px;
 }
+
 /* .resume-details:before{
   content: "";
   position: absolute;
@@ -223,6 +227,9 @@ body{
 /* ---------------------------------------------------
     Resume PAGE STYLE    
 ----------------------------------------------------- */
+.degree ,.school , .describe{
+  outline: none;
+}
 .degree[placeholder]:empty:before {
   content: attr(placeholder);
   
@@ -288,10 +295,9 @@ body{
 ----------------------------------------------------- */
 .skill .skill-details .skill-circle{
   background-color:#fff;
-  border:1px solid green;  
-      
+  border:1px solid green;     
   height:60px;
-  border-width:6px;
+  border-width:7px;
   border-radius:50%;
   -moz-border-radius:50%;
   -webkit-border-radius:50%;
@@ -301,4 +307,658 @@ body{
   margin-right:10px;
   margin-top:-16px;
   cursor: pointer;
+  
+}
+.skill-summary{
+  align-self: flex-start;
+  flex: 0 0 220px;
+  max-width: 220px;
+  padding-left: 20px;
+  position: relative;
+  margin-left:50px;
+}
+.skill-summary:before{
+  content: "";
+  position: absolute;
+  left:-14px;
+  top: 5px;
+  height: 15px;
+  width: 15px;
+  border-radius: 100px;
+  background: red;
+  border: 3px solid red;
+
+}
+
+
+
+
+/* ---------------------------------------------------
+      templatetwo   TEMPLATE TWO PAGE STYLE    
+----------------------------------------------------- */
+.namecontainertwo{
+  margin-top:100px;
+  margin-left:20px;
+}
+.namecontainertwo .c-name{
+    width: 800px;
+    height: 85px;
+    padding: 5px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+   
+}
+.namecontainertwo .name-info .expert{
+  margin-left:0px;
+  width: 800px;
+  height: 45px;
+  padding: 5px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+ 
+}
+
+.c-name[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+.expert[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+.imgcontainer2 .inner-foto{
+  position: relative;
+  width:200px;
+  height: 0;
+  cursor: pointer;
+  padding-bottom: 100%;
+  border-radius: 30rem;
+  background: grey;
+  overflow: hidden;
+  background-position: 50% 50%!important;
+  background-size: cover!important;
+  -webkit-background-size: cover!important;
+}
+.imgcontainer2 .firstLi{
+  width:25%;
+  display: block;
+  float: left;
+  position: relative;
+}
+.imgcontainer2 .inner-foto .inner-icon-text{
+  margin:70px 29%;
+  text-transform: uppercase;
+ 
+}
+.imgcontainer2 .inner-foto label {
+  cursor: pointer;
+  font-size:8px ;
+  /* Style as you please, it will become the visible UI component. */
+}
+/*-------- Here is the CSS    CONTACT-INFO -------- */
+.list-contact2 li{
+  list-style: none;
+  font-size:22px;
+  display: inline-block;
+  margin-left:30px;
+  margin-top:0px;
+}
+.list-contact2 .single-contact2 .contact-info2{
+  width: 800px;
+  height: 45px;
+  font-size:0.8rem;
+  font-weight:300;
+  margin: 0;
+  outline: none;
+  margin:5px;
+ 
+}
+.contact-info2[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+.list-contact2 li{
+  margin-top: 12px;
+}
+.fa{
+  color: red;
+}
+
+.skil-main .skil-part{
+  border-top: 10px solid #7F8C8D;
+  width:100%;
+}
+.skil-main .skil-part2{
+  border-top: 10px solid red;
+  width:70%;
+  margin-top: -10px;
+}
+.skil-main .contact-info2{
+  width:400px;
+  height: 45px;
+  font-size:1rem;
+  font-weight:300;
+  margin: 0;
+  outline: none;
+  margin-bottom:-18px;
+ 
+}
+
+
+
+/* ---------------------------------------------------
+        TEMPLATE THREE 3333333   TEMPLATE THREE PAGE STYLE    
+----------------------------------------------------- */
+.list-contact3 .fa{
+  color:#142878;
+}
+.list-contact3 li{
+  list-style: none;
+  font-size:22px;
+  display: inline-block;
+  margin-left:0px;
+  margin-top:0px;
+}
+
+.list-contact3 .single-contact3 .contact-info3{
+  width: 800px;
+  height: 45px;
+  font-size:0.8rem;
+  font-weight:300;
+  margin: 0;
+  outline: none;
+  margin:5px;
+ 
+}
+.namecontainerthree .c-name{
+  width: 800px;
+  height: 85px;
+  padding: 5px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+ 
+}
+.namecontainerthree .name-info .expert{
+  outline: none;
+}
+.contact-info3[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+.list-contact3 li{
+  margin-top: 12px;
+}
+.profile-status3 .describe{
+  width:750px;
+}
+.namecontainerthree{
+  margin-top:90px;
+  margin-left:0px;
+}
+.resume-rapper .iconsize {
+  vertical-align: middle;
+  width:40px;
+  height:40px;
+  line-height:47px;
+  border-radius: 50%;
+  background-color: #142878;
+  display: inline-block;
+  margin-top:-10px;
+  
+  
+}
+.resume-rapper .iconsize .fa-graduation-cap{
+  font-size: 22px;
+  margin-left:7px;
+  text-align: center;
+  display: inline;
+}
+.resume-rapper .iconsize .fa-lightbulb-o{
+  font-size: 30px;
+  margin-left:11px;
+  text-align: center;
+  display: inline;
+  margin-top:19px;
+}
+.resume-rapper .iconsize .fa-certificate{
+  font-size: 26px;
+  margin-left:8px;
+  text-align: center;
+  display: inline;
+  margin-top:10px;
+}
+.resume-rapper .iconsize .fa-trophy{
+  font-size: 26px;
+  margin-left:8px;
+  text-align: center;
+  display: inline;
+  margin-top:10px;
+}
+.resume-rapper .iconsize .fa-briefcase{
+  font-size: 26px;
+  margin-left:7px;
+  text-align: center;
+  display: inline;
+  margin-top:10px;
+}
+
+
+/* ---------------------------------------------------
+    Resume PAGE STYLE    
+----------------------------------------------------- */
+
+.resume-rapper{
+ 
+  margin-top: 0px;
+  
+}
+.resume{
+  margin-top:70px;
+  margin-left:-45px;
+}
+.resume .describe{
+  outline: none;
+}
+/* .resume:hover {
+  outline: #333 dotted 4px;
+} */
+.resume-area .sectiontitle{
+  position: relative;
+  z-index: 1;
+}
+.resume-area .smalltitle{
+  display: flex;
+  align-items: center;
+}
+.resume-summary{
+  align-self: flex-start;
+  flex: 0 0 220px;
+  max-width: 220px;
+  padding-left: 20px;
+  position: relative;
+  margin-left:50px;
+}
+.resume-summary3{
+  align-self: flex-start;
+  flex: 0 0 220px;
+  max-width: 220px;
+  padding-left: 20px;
+  position: relative;
+  margin-left:50px;
+}
+.resume-summary3:before{
+  content: "";
+  position: absolute;
+  left:-14px;
+  top: 0px;
+  height: 15px;
+  width: 15px;
+  border-radius: 100px;
+  background-color: #142878;
+  border: 3px solid #142878;
+
+}
+.resume-details{
+  position: relative;
+  margin-left:60px;
+  margin-top:-32px;
+  
+}
+.resume-details .position{
+  outline: none;
+  
+}
+.resume-details .mi-resume-company,.resume-details .mi-resume-year{
+  outline: none;
+  font-weight:700px;
+}
+.resume-wrapper .resume p{
+  margin-left: 65px;
+  margin-top: 0px;
+}
+.position[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+.mi-resume-company[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+.describe[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+.mi-resume-year[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+.resume .resume-details p.describe{
+  margin-left:10px;
+  margin-top: 0px;
+}
+.skil-main-3 .skil-part{
+  border-top: 10px solid #7F8C8D;
+  width:100%;
+
+}
+.skil-main-3 .skil-part2{
+  border-top: 10px solid #142878;
+  width:70%;
+  margin-top: -10px;
+}
+.skil-main-3 .contact-info2{
+  width:400px;
+  height: 45px;
+  font-size:1rem;
+  font-weight:300;
+  margin: 0;
+  outline: none;
+  margin-bottom:-18px;
+ 
+}
+
+
+/* ---------------------------------------------------
+        TEMPLATE FORTH 4444444   TEMPLATE FOUR PAGE STYLE    
+----------------------------------------------------- */
+.list-contact3 .fa{
+  color:#142878;
+}
+.list-contact3 li{
+  list-style: none;
+  font-size:22px;
+  display: inline-block;
+  margin-left:0px;
+  margin-top:0px;
+}
+
+.list-contact3 .single-contact3 .contact-info3{
+  width: 800px;
+  height: 45px;
+  font-size:0.8rem;
+  font-weight:300;
+  margin: 0;
+  outline: none;
+  margin:5px;
+ 
+}
+.namecontainerforth .c-name{
+  width: 800px;
+  height: 85px;
+  padding: 5px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+
+ 
+}
+.namecontainerforth .name-info .expert{
+  outline: none;
+}
+.contact-info3[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+.list-contact3 li{
+  margin-top: 12px;
+}
+.profile-status4 .describe{
+  width:1000px;
+}
+.namecontainerforth{
+  margin-top:90px;
+  margin-left:0px;
+}
+.personal4 .iconsize ,.resume-apper .iconsize ,.profileurl4 .iconsize {
+  vertical-align: middle;
+  width:40px;
+  height:40px;
+  line-height:47px;
+  background-color: #142878;
+  display: inline-block;
+  margin-top:-10px;
+  
+  
+}
+.personal4 .iconsize .fa-user{
+  font-size: 25px;
+  margin-left:9px;
+  text-align: center;
+  display: inline;
+}
+.resume-apper .iconsize .fa-graduation-cap{
+  font-size: 22px;
+  margin-left:7px;
+  text-align: center;
+  display: inline;
+}
+.resume-apper .iconsize .fa-lightbulb-o{
+  font-size: 30px;
+  margin-left:11px;
+  text-align: center;
+  display: inline;
+  margin-top:19px;
+}
+.profileurl4 .iconsize .fa-lightbulb-o{
+  font-size: 30px;
+  margin-left:11px;
+  text-align: center;
+  display: inline;
+  margin-top:19px;
+}
+.resume-apper .iconsize .fa-certificate{
+  font-size: 26px;
+  margin-left:8px;
+  text-align: center;
+  display: inline;
+  margin-top:10px;
+}
+.resume-apper .iconsize .fa-trophy{
+  font-size: 26px;
+  margin-left:8px;
+  text-align: center;
+  display: inline;
+  margin-top:10px;
+}
+.resume-apper .iconsize .fa-briefcase{
+  font-size: 26px;
+  margin-left:7px;
+  text-align: center;
+  display: inline;
+  margin-top:10px;
+}
+
+
+/* ---------------------------------------------------
+    Resume PAGE STYLE    
+----------------------------------------------------- */
+
+.resume-rapper{
+ 
+  margin-top: 0px;
+  
+}
+.resume4{
+  margin-top:40px;
+  margin-left:65px;
+}
+.resume .describe{
+  outline: none;
+}
+/* .resume:hover {
+  outline: #333 dotted 4px;
+} */
+.resume-area .sectiontitle{
+  position: relative;
+  z-index: 1;
+}
+.resume-area .smalltitle{
+  display: flex;
+  align-items: center;
+}
+.resume-summary{
+  align-self: flex-start;
+  flex: 0 0 220px;
+  max-width: 220px;
+  padding-left: 20px;
+  position: relative;
+  margin-left:50px;
+}
+.resume-summary3{
+  align-self: flex-start;
+  flex: 0 0 220px;
+  max-width: 220px;
+  padding-left: 20px;
+  position: relative;
+  margin-left:50px;
+}
+.resume-details4{
+  position: relative;
+  margin-left:70px;
+  margin-top:-22px;
+  
+}
+.resume-details4 .position{
+  outline: none;
+  
+}
+.resume-details4 .mi-resume-company,.resume4 .resume-details4 .mi-resume-year{
+  outline: none;
+  font-weight:700px;
+}
+.resume-wrapper .resume p{
+  margin-left: 65px;
+  margin-top: 0px;
+}
+.position[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+.mi-resume-company[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+.describe[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+.mi-resume-year[placeholder]:empty:before {
+  content: attr(placeholder);
+  
+}
+.resume4 .resume-details4 p.describe{
+  width:84%;
+}
+.skil-main-4 .skil-part{
+  border-top: 10px solid #7F8C8D;
+  width:120%;
+
+}
+.skil-main-4 .skil-part2{
+  border-top: 10px solid #142878;
+  width:70%;
+  margin-top: -10px;
+}
+.skil-main-4 .contact-info2{
+  width:400px;
+  height: 45px;
+  font-size:1rem;
+  font-weight:300;
+  margin: 0;
+  outline: none;
+  margin-bottom:-18px;
+ 
+}
+.resume-apper hr{
+  font-weight: 400;
+  margin-left:0;
+  width:90%;
+}
+.skil hr ,.personal4 hr,.profileurl4 hr{
+  font-weight: 400;
+  margin-left:-60px;
+  width:160%;
+}
+.skil hr {
+  font-weight: 400;
+  margin-left:-60px;
+  width:160%;
+  margin-bottom:35px;
+}
+.bg-img{
+  background-color: rgba(0,0,0, 0.4);
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  
+}
+.header .bgtextitem{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
+  color: 	#FFFAFA;
+  font-weight: bold;
+  border: 5px solid #ddd;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+.header .hsr{
+  font-family: arial;
+	font-size: 19px;
+  width: 500px;
+	height: 50px;
+	border-radius: 80px;
+	line-height: 50px;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	margin:1rem auto;
+	color: #fff;
+  background-color:red;
+  cursor: pointer;
+	
+}
+.header .hsr:hover{
+  background-color:#fff;
+  color:red;
+}
+html{
+ scroll-behavior: smooth;
+ overflow-y: scroll;
+}
+#sampletemp .hsr{
+  font-family: arial;
+	text-transform: uppercase;
+	font-size: 16px;
+  width: 300px;
+	height: 50px;
+	border-radius: 80px;
+	line-height: 50px;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+  margin-left: 10%;
+  margin-top:15px;
+	color: #fff;
+  background-color:red;
+  cursor: pointer;
+	
+}
+#sampletemp .hsr:hover{
+  background-color:#fff;
+  color:red;
+}
+.profileurl4 .fa{
+  color: #142878;
 }

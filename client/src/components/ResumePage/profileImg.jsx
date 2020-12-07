@@ -17,7 +17,7 @@ class profileImg extends Component {
     render() {
         console.log(this.state.filePath)
         return (
-            <div className="imgcontainer ml-3 mt-2">
+            <div className="imgcontainer ml-3 mt-3">
             <div className="firstLi">
                  <label>
                      <div className="inner-foto mt-5 "

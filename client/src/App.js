@@ -1,28 +1,38 @@
-import React ,{useState} from 'react';
-import './App.css';
-import MainDashBoardPage from './components/ResumePage/mainDashBoardPage'
-import color from './components/Editor/color';
-function App() {
-  const [color, setColor] = useState(
-    ""
-  )
+import React ,{ Component } from 'react';
+import Home from './components/home/Home'
 
-  function handleMainColor(e){
-    setColor({
-      color:e
-    })
+import './App.css';
+import MainDashBoardPage from './components/mainDashBoardPage'
+class App extends Component {
+    state={
+      color:'#000',
+      name:null
+    }
+
+  handleMainColor=(e)=>{
+   this.setState({
+     color:e
+   })
    
 
   }
-  console.log(color)
-  
+   handleTemp=(name)=>{
+    this.setState({
+      name:name
+    })
+
+  }
+  render(){
+  console.log(this.state.name)
   return (
-    <div className="App" style={{backgroundColor:color.color}}>
-        <MainDashBoardPage handleMainColor={handleMainColor} />
-      
+    <div id="App" style={{backgroundColor:this.state.color}}>
+      {this.state.name ? <MainDashBoardPage name={this.state.name} handleMainColor={this.handleMainColor}  />:<Home handleTemp={this.handleTemp}  />}
+        
+      {/* <MainDashBoardPage /> */}
       
     </div>
   );
+}
 }
 
 export default App;
